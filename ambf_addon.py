@@ -2073,8 +2073,8 @@ class AddRigidBodyPropsPanel(bpy.types.Panel):
     """Add Rigid Body Properties"""
     bl_label = "AMBF RIGID BODY ADDITIONAL PROPERTIES"
     bl_idname = "OBJECT_PT_ambf_rigid_body_props"
-    bl_space_type = 'VIEW_3D'
-    bl_region_type = 'UI'
+    bl_space_type = 'PROPERTIES'
+    bl_region_type = 'WINDOW'
     bl_context= "physics"
     
     bpy.types.Object.ambf_enable_body_props = bpy.props.BoolProperty(name="Enable", default=False)
